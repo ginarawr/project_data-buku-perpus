@@ -29,14 +29,7 @@ cout<<"\n\n----------------------------------------------\n";
             cout<<"ID Buku sudah ada. Silakan masukkan ID yang Unik.\n";
         return;
         }
-        cout<<"Masukkan Judul Buku: ";
-        getline(cin>>ws, bukubaru.judul);
-        cout<<"Masukkan Nama Penulis Buku: ";
-        getline(cin>>ws, bukubaru.nama);
-        cout<<"Masukkan Tahun Terbit Buku: ";
-        cin>>bukubaru.tahunterbit;
-        buku[jumlahbuku++]=bukubaru;
-        cout<<"\n Buku berhasil ditambahkan.\n";
+
 
     }
 
