@@ -1,0 +1,25 @@
+{
+   
+    "tasks": [
+        {
+            "label": "Compile C++",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++17",
+                ".\\src\\main.cpp",
+                "-o",
+                ".\\bin\\Main.exe",
+            ]
+            },{
+                "label": "Run",
+                "type": "shell",
+                "command":".\\bin\\Main",
+                "dependsOn":["Compile C++"],
+                "group": {
+                    "kind": "build",
+                    "isDefault": true
+                }
+            }
+        ], "version": "2.0.0"
+    }
